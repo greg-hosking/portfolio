@@ -1,0 +1,76 @@
+/* Color variable declarations */
+:root {
+    --navy: rgba(13, 26, 50, 255);
+    --lightblue: rgba(47, 97, 174, 255);
+    --darkblue: rgba(35, 57, 101, 255); 
+	--yellow: rgba(236,167,29,255);
+	--red: rgba(228,31,29,255);
+	--green: rgba(14,153,8,255);
+}
+
+nav {
+	background: var(--navy);
+	color: whitesmoke;
+}
+
+#home img {
+    width: 20rem;
+}
+
+#about {
+    background: var(--darkblue);
+    color: whitesmoke;
+}
+
+#resume object {
+    width: 85%;
+    height: 1000px;
+}
+
+#contact {
+    background: var(--darkblue);
+    color: whitesmoke;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+#contact a:hover {
+    color: white;
+}
+
+
+footer {
+	background: var(--navy);
+	/* border-top: 3px solid whitesmoke; */
+	color: whitesmoke;
+}
+
+
+/* Animate the carets for the accordions */
+[data-toggle="collapse"]:after {
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f054";
+	transform: rotate(-90deg);
+	transition: all linear 0.25s;
+	float: right;
+}   
+[data-toggle="collapse"].collapsed:after {
+	transform: rotate(90deg);
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #resume object {
+        width: 100%;
+        /* zoom: 25%; */
+    }
+
+}
