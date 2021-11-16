@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Shim -->
+  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+  <!-- Title and Favicon -->
+  <title>Gregory Hosking Portfolio</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- main.css Setup -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Bootstrap Setup -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+
+  <script>
+    var scrollWindow = function () { scrollBy(0, -50) };
+    if (location.hash) scrollWindow();
+    window.addEventListener("hashchange", scrollWindow);
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-fill w-100 h3">
+        <li class="nav-item">
+          <a class="h4 nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="h4 nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="h4 nav-link" href="#resume">RESUME</a>
+        </li>
+        <li class="nav-item">
+          <a class="h4 nav-link" href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="h4 nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="container-fluid py-5 text-center">
+    <img class="img-fluid rounded-circle" src="images/portrait.jpg">
+    <h1 class="pt-3">GREGORY HOSKING</h1>
+    <h4>STUDENT &middot; SOFTWARE ENGINEER</h4>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="container-fluid py-5 text-center">
+    <!-- About Heading -->
+    <h2 class="border-bottom pb-3">ABOUT ME</h2>
+    <!-- About Description -->
+    <div class="row">
+      <div class="col-xl-3 col-md-2 col-sm-0 col-xs-0"></div>
+      <div class="col-xl-6 col-md-8 col-sm-12 col-xs-12">
+        <p class="h5 pt-3">
+          Hi! My name is Greg Hosking and I am a sophomore Computer Science and Applied Mathematics double major at
+          Endicott
+          College. I am also President and Founder of the Computer Science Club at Endicott College.
+        </p>
+        <p class="h5 pt-3">
+          As an aspiring Software Engineer, I am a determined and hard-working team player with strong programming
+          skills in a variety of programming languages. Python is my language of choice, and I am also fluent in C++ and
+          Java. I have a great passion for Computer Science, and I am always looking to pick up new skills and
+          technologies!
+        </p>
+        <p class="h5 pt-3">
+          My interests include making video games and playing card games.
+        </p>
+      </div>
+      <div class="col-xl-3 col-md-2 col-sm-0 col-xs-0"></div>
+    </div>
+
+  </div>
+
+  <!-- Resume Section -->
+  <div id="resume" class="container-fluid py-5 text-center">
+    <!-- Resume Heading -->
+    <h2 class="border-bottom pb-3">RESUME</h2>
+
+
+
+    <!-- Your browser is too small to preview this PDF. You can instead download the PDF here. -->
+
+    <object data="files/Resume.pdf" type="application/pdf" class="d-none d-lg-block mx-auto">
+    </object>
+
+    <div class="d-lg-none text-center">
+      <h5>Your browser is too small to preview this PDF! You can instead <a href="files/Resume.pdf" target="blank">click
+          here to download the
+          PDF</a>.</h5>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="container-fluid py-5 text-center">
+    <!-- Portfolio Heading -->
+    <h2 class="border-bottom pb-3">PORTFOLIO</h2>
+    <!-- Portfolio Description -->
+    <div class="row">
+      <div class="col-xl-3 col-md-2 col-sm-0 col-xs-0"></div>
+      <div class="col-xl-6 col-md-8 col-sm-12 col-xs-12">
+        <h5 class="pt-3">Here are a few of the projects that I have created or contributed to.</h5>
+      </div>
+      <div class="col-xl-3 col-md-2 col-sm-0 col-xs-0"></div>
+    </div>
+
+    <!-- Portfolio Projects -->
+
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container-fluid py-5 text-center">
+    <h2 class="border-bottom pb-3">CONTACT ME</h2>
+    <h5 class="pt-3">EMAIL: <a href="mailto:hoskinggregory@gmail.com">hoskinggregory@gmail.com</a></h5>
+    <h5 class="pt-2">PHONE: <a href="tel:9787512753">+1 (978) 751-2753</a></h5>
+    <h5 class="pt-2">LINKEDIN: <a href="https://www.linkedin.com/in/gregory-hosking/" target="blank">Gregory Hosking</a>
+    </h5>
+  </div>
+
+  <!-- Footer -->
+  <script>
+    window.onload = function () {
+      date = new Date();
+      document.getElementById("current-year").innerHTML = date.getFullYear();
+    }
+  </script>
+  <footer class="clearfix">
+    <div class="footer-copyright text-center text-light py-4">
+      <p>COPYRIGHT &copy; GREG HOSKING <span id="current-year"></span></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript/jQuery/Bootstrap Setup -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
